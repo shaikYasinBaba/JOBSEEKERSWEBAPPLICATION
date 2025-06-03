@@ -64,7 +64,7 @@ const Login = () => {
       }
       alert("Logged in successfully!");
       localStorage.setItem("userId", user.id);
-      window.location.href = "/profile";
+      window.location.href = "/";
     }
   };
 
