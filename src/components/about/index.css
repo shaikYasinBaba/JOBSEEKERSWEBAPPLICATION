@@ -1,0 +1,108 @@
+.auth-form-container {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 36px 32px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222;
+  }
+  
+  .auth-form-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #1a1a1a;
+    letter-spacing: 0.03em;
+  }
+  
+  .dropdowns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  
+  .dropdowns select {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    background-color: #fafafa;
+  }
+  
+  .dropdowns select:focus {
+    border-color: #0052cc;
+    box-shadow: 0 0 6px rgba(0, 82, 204, 0.35);
+    outline: none;
+    background-color: #fff;
+  }
+  
+  form input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    background-color: #fafafa;
+  }
+  
+  form input:focus {
+    border-color: #0052cc;
+    box-shadow: 0 0 6px rgba(0, 82, 204, 0.35);
+    outline: none;
+    background-color: #fff;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #0052cc 0%, #007bff 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+  }
+  
+  form button:hover {
+    background: linear-gradient(90deg, #003d99 0%, #0056b3 100%);
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.6);
+  }
+  
+  form button:active {
+    transform: scale(0.98);
+  }
+  
+  li {
+    list-style-type: none;
+    padding-left: 0; /* optional, removes extra indent */
+    margin-left: 0;  /* optional, remove any margin */
+  }
+  ul.no-bullets li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+#heading{
+    font-family: roboto;
+    color: green;
+    text-align: center;
+    margin: 5px;
+
+}
+.cont{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}

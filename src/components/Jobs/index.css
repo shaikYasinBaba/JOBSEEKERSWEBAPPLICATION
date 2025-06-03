@@ -1,0 +1,85 @@
+/* Container around all jobs */
+.jobs-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Search bar */
+.search-bar {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 60%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 90%;
+  }
+}
+
+/* Job cards container using Flexbox */
+.jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Single job card styling */
+.job-card {
+  background-color: #f9f9f9;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 calc(33.33% - 40px); /* 3 in a row */
+  max-width: calc(33.33% - 40px);
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+}
+
+/* Tablet: 2 per row */
+@media (max-width: 1024px) {
+  .job-card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 768px) {
+  .job-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .jobs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Optional: job card text styles */
+.job-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.job-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}

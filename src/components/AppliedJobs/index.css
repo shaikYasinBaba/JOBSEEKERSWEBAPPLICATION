@@ -1,0 +1,127 @@
+.jobseeker-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/* Flex layout for job cards */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jobseeker-card {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  flex: 1 1 calc(50% - 20px); /* 2 cards per row with spacing */
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.jobseeker-card:hover {
+  transform: scale(1.01);
+}
+
+.job-details-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.resume-section {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.toggle-btn {
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* Status badge styles */
+.status-applied {
+  color: green;
+  font-weight: bold;
+}
+
+.status-viewed {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-selected-for-next-step {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: red;
+  font-weight: bold;
+}
+
+/* Select styling inside status section */
+.status-update-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 10px;
+}
+
+.status-update-section select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Small screen: stack cards */
+@media screen and (max-width: 768px) {
+  .jobseeker-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .job-details-row {
+    flex-direction: row;
+  }
+
+  .status-update-section {
+    margin-bottom: 10px;
+  }
+}
+
+#f-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: rgb(98, 112, 112);
+}
